@@ -1,0 +1,94 @@
+.jobslist {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.jobslist .jobfilter .filtype {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.jobslist .jobfilter .filtype .filtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.jobslist .jobfilter .filtype .opselect input {
+  width: 20px;
+}
+
+.jobslist .jobfilter .filtype .opselect label {
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.jobslist .lists .listhead {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobslist .lists .listhead .sortdel select,
+.jobslist .lists .listhead .sortdel select:focus-visible {
+  background-color: transparent !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.jobslist .lists .listbody .namesec .title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jobslist .lists .listbody .smalldet {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobslist .lists .listbody .jobdescr {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobslist .lists .listbody .jobexp {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobslist .lists .listbody .boxdesc .boxbtn {
+  background-color: var(--color-muted-light);
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.55rem;
+}
+
+.jobslist .jobdescsec {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  top: 20px;
+}
+
+.jobslist .jobdescsec .fix {
+  height: 95vh;
+}
+
+.jobslist .jobdescsec .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jobslist .jobdescsec .smalldet {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobslist .jobdescsec .jobdescr .heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.jobslist .jobdescsec .jobdescr p {
+  font-size: 14px;
+  font-weight: 400;
+}

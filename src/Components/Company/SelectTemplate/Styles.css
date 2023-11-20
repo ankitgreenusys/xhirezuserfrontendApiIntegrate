@@ -1,0 +1,7 @@
+/* .selecttemp {
+} */
+
+.selecttemp .searchbar {
+  border-bottom: 1px solid var(--color-border);
+  margin: 0px -20px;
+}

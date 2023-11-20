@@ -1,0 +1,59 @@
+.jobdescpag {
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .jobdescpag {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.jobdescpag .updta {
+  margin-bottom: 25px;
+}
+
+.jobdescpag .updta .title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.jobdescpag .updta .cmpname {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.jobdescpag .updta .smalldet .loc {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.jobdescpag .updta .smalldeta span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobdescpag .updta .linkbtn {
+  margin-top: 30px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobdescpag .updta .linkbtn i {
+  font-size: 20px;
+}
+
+.jobdescpag .jobdescr .heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.jobdescpag .jobdescr p {
+  font-size: 14px;
+  font-weight: 400;
+}

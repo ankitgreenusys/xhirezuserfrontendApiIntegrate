@@ -1,0 +1,105 @@
+.jobshomesec .hoheading h1 {
+  font-weight: 600;
+  font-size: 42px;
+}
+
+.jobshomesec .hoheading p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.jobshomesec .commonjob {
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 1100px) {
+  .jobshomesec .commonjob {
+    margin: 40px 200px;
+  }
+}
+
+.jobshomesec .commonjob span {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.jobshomesec .commonjob .atextbox:nth-child(n) .fa-bullhorn {
+  color: #ffc400;
+}
+.jobshomesec .commonjob .atextbox:nth-child(2n) .fa-bullhorn {
+  color: #3fa2f7;
+}
+.jobshomesec .commonjob .atextbox:nth-child(3n) .fa-bullhorn {
+  color: #56c568;
+}
+.jobshomesec .commonjob .atextbox:nth-child(4n) .fa-bullhorn {
+  color: #2075b2;
+}
+.jobshomesec .commonjob .atextbox:nth-child(5n) .fa-bullhorn {
+  color: #4c1dd4;
+}
+.jobshomesec .commonjob .atextbox:nth-child(6n) .fa-bullhorn {
+  color: #df4f69;
+}
+.jobshomesec .commonjob .atextbox:nth-child(7n) .fa-bullhorn {
+  color: #ed3434;
+}
+.jobshomesec .commonjob .atextbox:nth-child(8n) .fa-bullhorn {
+  color: #0faaa1;
+}
+.jobshomesec .commonjob .atextbox:nth-child(9n) .fa-bullhorn {
+  color: #e048be;
+}
+
+.jobshomesec .featurehead {
+  margin-top: 50px;
+}
+
+.jobshomesec .featurehead h1 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.jobshomesec .featurehead .cmpyimg img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.jobshomesec .featurehead .cpmynme {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.jobshomesec .featurehead .cpmydet {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.jobshomesec .rolesjobs {
+  margin-top: 50px;
+}
+
+.jobshomesec .rolesjobs h1 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.jobshomesec .rolesjobs .roledesc h5 {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.jobshomesec .rolesjobs .roledesc span {
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.jobshomesec .rolesjobs .roledesc i {
+  font-size: 13px;
+}

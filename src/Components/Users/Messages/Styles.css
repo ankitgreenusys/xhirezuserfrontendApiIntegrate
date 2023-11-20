@@ -1,0 +1,179 @@
+.messagesec {
+  margin-top: 30px;
+}
+
+.messagesec .sidebartab .catebox {
+  padding: 20px 25px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.messagesec .sidebartab .msgstabs {
+  margin-top: 20px;
+  display: flex;
+  color: var(--color-muted);
+}
+
+.messagesec .sidebartab .msgstabs .msgstab {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.messagesec .sidebartab .msgstabs .msgstab.true {
+  color: var(--color-primary);
+}
+
+.messagesec .sidebartab .msgslist {
+  margin-left: -10px;
+  height: 70vh;
+}
+
+.messagesec .sidebartab .msgslist .msgcmp {
+  padding: 15px 0;
+  border-bottom: 1px solid var(--color-muted-light);
+}
+
+.messagesec .sidebartab .msgslist .msgcmp:last-child {
+  border-bottom: none;
+}
+
+.messagesec .sidebartab .msgslist .msgcmp .msghead .cmpdet .cmpname {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.messagesec .sidebartab .msgslist .msgcmp .msghead .cmpdet .cmpdate {
+  margin-left: 7px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.messagesec .sidebartab .msgslist .msgcmp .msghead .unreadnu {
+  font-size: 12px;
+  font-weight: 400;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.messagesec .sidebartab .msgslist .msgcmp .msgbody {
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.messagesec .sidebartab .msgslist .msgcmp.active .msgbody {
+  font-weight: 600;
+}
+
+.messagesec .chatsec {
+  margin-top: 20px;
+}
+
+.messagesec .chatsec .msgbox {
+  margin-top: 20px;
+}
+
+.messagesec .chatsec .msgbox .msghead {
+  padding-bottom: 10px;
+  /* border-bottom: 1px solid var(--color-muted-light); */
+}
+
+.messagesec .chatsec .msgbox .msghead .cmpdeg {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.messagesec .chatsec .msgbox .msghead .cmpname {
+  margin-top: 5px;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.messagesec .chatsec .msgbox .chatbody {
+  height: 65vh;
+  padding: 20px 0;
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday .chatdate .dateline {
+  border-bottom: 1px solid var(--color-muted-light);
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday .chatdate .date {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0 10px;
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday .chatmsgs .msg {
+  margin-top: 10px;
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday .chatmsgs .msg .person {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday .chatmsgs .msg .time {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.messagesec .chatsec .msgbox .chatbody .singleday .chatmsgs .msgtxt {
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.messagesec .chatsec .msgbox .msginput {
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+  font-weight: 600;
+  /* border-top: 1px solid var(--color-muted-light); */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.messagesec .chatsec .msgbox .msginput input {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: var(--color-text-light);
+}
+
+.messagesec .chatsec .msgbox .msginput button {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.messagesec .cmpydettab .degname {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.messagesec .cmpydettab .cmpname {
+  margin-top: 10px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.messagesec .cmpydettab .cmploc {
+  font-size: 16px;
+  font-weight: 400;
+}

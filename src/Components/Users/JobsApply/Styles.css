@@ -1,0 +1,162 @@
+.jobsapplysec {
+  margin-top: 60px;
+  margin-left: 140px;
+}
+
+@media screen and (max-width: 900px) {
+  .jobsapplysec {
+    margin-left: 20px;
+  }
+}
+
+.jobsapplysec .jobques {
+  margin-top: 20px;
+  padding-right: 50px;
+}
+
+.jobsapplysec .heading {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.jobsapplysec .jobques .resumesec .fileion {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: var(--color-muted-light);
+}
+
+.jobsapplysec .jobques .resumesec .checkicon {
+  font-size: 25px;
+}
+
+.jobsapplysec .jobques .resumesec .resumename {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jobsapplysec .jobques .resumesec .resumeupload {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobsapplysec .jobques .resumesec .uploadbtn {
+  padding: 10px 30px;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  background-color: var(--color-text-light);
+}
+
+.jobsapplysec .jobques .qnasec {
+  margin-top: 40px;
+}
+
+.jobsapplysec .jobques .qnasec .ques {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* .jobsapplysec .jobques .qnasec .ques input[type="text"],
+.jobsapplysec .jobques .qnasec .ques textarea,
+.jobsapplysec .jobques .qnasec .ques input[type="radio"]:not(:checked),
+.jobsapplysec .jobques .qnasec .ques select {
+  border: 1px solid var(--color-text);
+} */
+
+.jobsapplysec .reviewdata {
+  margin-top: 20px;
+}
+
+.jobsapplysec .reviewdata .detail h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.jobsapplysec .reviewdata .detail h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jobsapplysec .reviewdata .termssec {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobsapplysec .jobdescsec {
+  margin-top: 120px;
+  margin-bottom: 20px;
+  top: 20px;
+}
+
+.jobsapplysec .jobdescsec .fix {
+  max-height: 95vh;
+  overflow-y: auto;
+}
+.jobsapplysec .jobdescsec .fix::-webkit-scrollbar {
+  width: 3px;
+}
+
+/* Track */
+.jobsapplysec .jobdescsec .fix::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Handle */
+.jobsapplysec .jobdescsec .fix::-webkit-scrollbar-thumb {
+  background: var(--color-muted-light);
+  border-radius: 20px;
+}
+
+.jobsapplysec .jobdescsec .title h5 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jobsapplysec .jobdescsec .title .bookmarkicon {
+  font-size: 22px;
+}
+
+.jobsapplysec .jobdescsec .smalldet {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobsapplysec .jobdescsec .jobdescr .heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.jobsapplysec .jobdescsec .jobdescr p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobsapplysec .appliedsec {
+  margin-top: 70px;
+  margin-left: -120px;
+}
+
+@media screen and (max-width: 900px) {
+  .jobsapplysec .appliedsec {
+    margin-left: 0px;
+  }
+}
+
+.jobsapplysec .message h5 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.jobsapplysec .iconarea i {
+  font-size: 100px;
+}

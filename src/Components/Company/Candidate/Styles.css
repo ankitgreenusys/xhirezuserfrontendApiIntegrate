@@ -1,0 +1,44 @@
+.cadidalist .resumesec .filtype {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.cadidalist .resumesec p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cadidalist .resumesec .filtype .opselect p {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cadidalist .resumesec .filtype .opselect button {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.cadidalist .jobfilter .filtype {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cadidalist .jobfilter p {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.cadidalist .jobfilter .filtype .filtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.cadidalist .jobfilter .filtype .opselect input {
+  width: 20px;
+}
+
+.cadidalist .jobfilter .filtype .opselect label {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}

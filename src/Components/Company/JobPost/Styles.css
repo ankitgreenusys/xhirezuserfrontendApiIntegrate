@@ -1,0 +1,62 @@
+.jbpstcomp .form2 textarea {
+  width: 100%;
+}
+
+.jbpstcomp .livepre .fix {
+  height: 95vh;
+}
+
+.jbpstcomp .livepre .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jbpstcomp .livepre .smalldet {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jbpstcomp .livepre .jobdescr .heading {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.jbpstcomp .livepre .jobdescr p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jbpstcomp .review .hed1 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.jbpstcomp .review .hed2 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.jbpstcomp .review .desc1 {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 15px;
+}
+
+.jbpstcomp .confirmSec {
+  margin: 0 -20px -40px -20px;
+  background-color: var(--color-muted);
+}
+
+.jbpstcomp .submittedsec .iconarea i {
+  font-size: 150px;
+}
+
+.jbpstcomp .submittedsec {
+  min-height: 80vh;
+}
+
+.jbpstcomp .submittedsec .message h5 {
+  font-size: 32px;
+  font-weight: 600;
+}

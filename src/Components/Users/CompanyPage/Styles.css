@@ -1,0 +1,101 @@
+.comppagesec .bgimage {
+  height: 200px;
+  overflow-y: hidden;
+}
+
+.comppagesec .bgimage img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.comppagesec .cmplogo {
+  margin-top: -50px;
+}
+
+.comppagesec .cmplogo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.comppagesec .cmpdta {
+  padding: 0 10vw;
+}
+
+@media screen and (max-width: 768px) {
+  .comppagesec .cmpdta {
+    padding: 0 5vw;
+  }
+}
+
+.comppagesec .cmpdet .cmpname {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.comppagesec .cmpdet .cmptype {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.comppagesec .cmpdet .cmplink span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.comppagesec .compdettabs {
+  margin-top: 60px;
+}
+
+.comppagesec .compdettabs .tabs .tab {
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+.comppagesec .compdettabs .tabs .tab span {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.comppagesec .compdettabs .discontent {
+  margin-top: 60px;
+}
+
+.comppagesec .compdettabs .tabs .tab.true span {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 9px;
+}
+
+.comppagesec .postedjobstab .jobpost h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.comppagesec .postedjobstab .jobpost {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.comppagesec .whyussec p,
+.comppagesec .aboutussec p,
+.comppagesec .salariessec p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.comppagesec .salariessec h5,
+.comppagesec .aboutussec h5 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}

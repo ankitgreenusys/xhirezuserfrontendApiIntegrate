@@ -1,0 +1,159 @@
+.profilesec {
+  padding: 0 150px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 0;
+  }
+}
+
+.profilesec h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profilesec .dividehr {
+  border: 1px solid #ccc;
+  margin: 30px -150px;
+
+  @media screen and (max-width: 768px) {
+    margin: 30px -50px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    margin: 30px 0;
+  }
+}
+
+.profilesec .profiledetails .topic {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.profilesec .profiledetails .topic span {
+  font-size: 13px;
+  font-weight: 400;
+  margin-left: 14px;
+}
+
+.profilesec .profiledetails .editbtn {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profilesec .profiledetails .basicdetail .detarea {
+  margin: 15px 0;
+}
+
+.profilesec .profiledetails .basicdetail .detarea .imgsec {
+  margin-right: 60px;
+}
+
+.profilesec .profiledetails .basicdetail .detarea .imgsec img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profilesec .profiledetails .basicdetail .detarea .detdata h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profilesec .profiledetails .basicdetail .detarea .detdata h5 {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.profilesec .profiledetails .keyskills .keywords {
+  margin: 15px 0;
+}
+
+.profilesec .profiledetails .keyskills .keywords .keyword {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 10px 0 0;
+  border-radius: 5px;
+  background-color: var(--color-muted-light);
+  color: var(--color-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.profilesec .profiledetails .keyskills .keywords .keyword:hover {
+  background-color: var(--color-muted);
+}
+
+.profilesec .profiledetails .workexpdet .workexps {
+  margin: 15px 0;
+}
+
+.profilesec .profiledetails .workexpdet .workexps .workexp {
+  margin: 10px 0;
+}
+
+.profilesec .profiledetails .workexpdet .workexps .workexp .icon {
+  background-color: var(--color-muted-light);
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: var(--color-text);
+  font-size: 20px;
+}
+
+.profilesec .profiledetails .workexpdet .workexps .workexp .details {
+  margin-left: 10px;
+}
+
+.profilesec .profiledetails .workexpdet .workexps .workexp .details .degina {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profilesec .profiledetails .workexpdet .workexps .workexp .details .duration {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.profilesec .profiledetails .projectarea .projects .project .ptitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.profilesec .profiledetails .projectarea .projects .project .ptitle span {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--color-muted);
+  margin-right: 60px;
+
+  @media screen and (max-width: 480px) {
+    margin-right: 0;
+  }
+}
+
+.profilesec .profiledetails .projectarea .projects .project .pdetails {
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 3px;
+  color: var(--color-muted);
+}
+
+.profilesec .profiledetails .otherdetarea .othdets .othdet .odtitle {
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.profilesec .profiledetails .otherdetarea .othdets .othdet .oddetails {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 3px;
+  color: var(--color-muted);
+}

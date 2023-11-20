@@ -1,0 +1,82 @@
+.compdash .compprofilesec .desc {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.compdash .compprofilesec .desc img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.compdash .compprofilesec .desc h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.compdash .compprofilesec .desc p {
+  /* margin-top: 5px; */
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-text-light);
+}
+
+.compdash .compprofilesec .desc button {
+  padding: 10px 30px;
+  border-radius: 25px;
+  background-color: #e2f6fd;
+  color: var(--color-primary);
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.compdash .compprofilesec .detils h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+
+.compdash .compprofilesec .detils span {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.compdash .compprofilesec .decrip h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.compdash .compprofilesec .decrip p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-muted);
+}
+
+.compdash .jobfilter .filtype {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.compdash .jobfilter .filtype .filtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.compdash .jobfilter .filtype .opselect input {
+  width: 20px;
+}
+
+.compdash .jobfilter .filtype .opselect label {
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}

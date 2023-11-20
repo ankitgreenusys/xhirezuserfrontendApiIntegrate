@@ -1,0 +1,422 @@
+:root {
+  --color-bg: #f9fbfc;
+  --color-text: #1c1e21;
+  --color-text-light: #fff;
+  --color-primary: #0898d6;
+  --color-danger: #eb5757;
+  --color-success: #56c568;
+  --color-dark: #383838;
+  --color-white: #fff;
+  --color-muted: #666666;
+  --color-muted-light: #99999965;
+  --color-border: #333333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #1c1e21;
+    --color-text: #ffffff;
+    --color-text-light: #121315;
+    --color-dark: #f9fbfc;
+    --color-border: #928e8e;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* overflow-y: hidden; */
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+input,
+select,
+textarea {
+  border-radius: 15px !important;
+  outline: none;
+  /* border: none; */
+  background-color: transparent !important;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border) !important;
+}
+
+input[type="radio"]:checked {
+  background-color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input::placeholder,
+select::placeholder,
+textarea::placeholder {
+  color: var(--color-muted) !important;
+}
+
+select option {
+  color: var(--color-text) !important;
+  background-color: var(--color-text-light) !important;
+}
+
+input:focus-visible,
+input:focus,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  border: none;
+  box-shadow: none !important;
+}
+
+.marginframe {
+  margin: 40px 20px;
+  min-height: 44vh;
+}
+
+.mybtn {
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.55rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+}
+
+.btn-blue {
+  background-color: var(--color-primary) !important;
+}
+
+.btn-red {
+  background-color: var(--color-danger) !important;
+}
+
+.btn-green {
+  background-color: var(--color-success) !important;
+}
+
+.btn-black {
+  background-color: var(--color-dark) !important;
+}
+
+.btn-trans {
+  background-color: transparent !important;
+  color: var(--color-text) !important;
+}
+
+.bdr-blue {
+  border: 1px solid var(--color-primary) !important;
+}
+
+.bdr-red {
+  border: 1px solid var(--color-danger) !important;
+}
+
+.bdr-green {
+  border: 1px solid var(--color-success) !important;
+}
+
+.bdr-black {
+  border: 1px solid var(--color-dark) !important;
+}
+
+.btn-muted {
+  background-color: var(--color-muted) !important;
+}
+
+.mybtn:hover:enabled {
+  transform: scale(1.05);
+}
+
+.mylabel {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.label-blue {
+  background-color: var(--color-primary) !important;
+}
+
+.label-red {
+  background-color: var(--color-danger) !important;
+}
+
+.label-green {
+  background-color: var(--color-success) !important;
+}
+
+.txt-blue {
+  color: var(--color-primary) !important;
+}
+
+.txt-red {
+  color: var(--color-danger) !important;
+}
+
+.txt-green {
+  color: var(--color-success) !important;
+}
+
+.txt-black {
+  color: var(--color-dark) !important;
+}
+
+.txt-muted {
+  color: var(--color-muted) !important;
+}
+
+.txt-light-muted {
+  color: var(--color-muted-light) !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.listtabs {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.detopheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: var(--color-text-light);
+}
+
+.detopheader .backbtn {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.detopheader .backbtn:hover {
+  transform: scale(1.05);
+}
+
+.detopheader .backbtn i {
+  margin-right: 10px;
+}
+
+.detopheader .hetitle {
+  font-weight: 600;
+  font-size: 26px;
+  color: var(--color-primary);
+}
+
+.detopheader .hedbtn {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.detopheader .desc {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.atextbox {
+  /* width: 100%; */
+  padding: 7px 20px;
+  border-radius: 15px;
+  background-color: var(--color-text-light);
+}
+
+.atextboxborder {
+  border: 1px solid var(--color-border);
+}
+
+.atextbox .divider {
+  border: 1px solid var(--color-muted-light);
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+.overflowscroll {
+  overflow-y: auto;
+}
+.overflowscroll::-webkit-scrollbar {
+  width: 3px;
+}
+/* Track */
+.overflowscroll::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* Handle */
+.overflowscroll::-webkit-scrollbar-thumb {
+  background: var(--color-muted-light);
+  border-radius: 20px;
+}
+
+.commntable table {
+  width: 100%;
+  table-layout: fixed;
+}
+.commntable .tbl-content table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  border-radius: 12px;
+}
+.tbl-header {
+  background-color: var(--color-text-light);
+  color: var(--color-text);
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.commntable .tbl-content {
+  height: auto;
+  overflow-x: auto;
+  margin-top: 0px;
+}
+.commntable th {
+  padding: 20px 15px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text);
+  text-transform: uppercase;
+}
+.commntable td {
+  padding: 15px;
+  text-align: left;
+  vertical-align: baseline;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.commntable tr.active td {
+  background-color: var(--color-muted-light);
+}
+
+.commntable td .posted {
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--color-muted);
+}
+
+.commntable td .status {
+  padding: 0.5rem 1rem;
+  border-radius: 0.55rem;
+  color: var(--color-text-light);
+  background-color: var(--color-dark);
+  width: fit-content;
+}
+
+.commntable td .actbtn {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.commntable .tbl-content tr {
+  background-color: var(--color-text-light);
+  margin-bottom: 15px;
+  border-radius: 15px;
+}
+
+.commntable ::-webkit-scrollbar {
+  width: 6px;
+}
+.commntable ::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.commntable ::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.commntable td:first-child,
+.commntable th:first-child {
+  border-radius: 15px 0 0 15px;
+}
+.commntable td:last-child,
+.commntable th:last-child {
+  border-radius: 0 15px 15px 0;
+}
+
+.chipcheck ul.ks-cboxtags {
+  list-style: none;
+  padding: 5px;
+}
+.chipcheck ul.ks-cboxtags li {
+  display: inline;
+  margin-right: 10px;
+}
+.chipcheck ul.ks-cboxtags li label {
+  display: inline-block;
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  border-radius: 25px;
+  white-space: nowrap;
+  user-select: none;
+  transition: all 0.2s;
+}
+
+.chipcheck ul.ks-cboxtags li label {
+  padding: 8px 12px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.chipcheck ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "\f067";
+  transition: transform 0.3s ease-in-out;
+}
+
+.chipcheck ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "\f00c";
+  transform: rotate(-360deg);
+  transition: transform 0.3s ease-in-out;
+}
+
+.chipcheck ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  border: 1px solid var(--color-text-light);
+  background-color: var(--color-text);
+  color: var(--color-text-light);
+  transition: all 0.2s;
+}
+
+.chipcheck ul.ks-cboxtags li input[type="checkbox"] {
+  display: absolute;
+}
+.chipcheck ul.ks-cboxtags li input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+}

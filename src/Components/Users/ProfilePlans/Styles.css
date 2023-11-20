@@ -1,0 +1,47 @@
+.profplansec {
+  padding: 0 150px;
+
+  @media screen and (max-width: 768px) {
+    padding: 0 50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 0 0;
+  }
+}
+
+.profplansec h1 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.profplansec .dividehr {
+  border: 1px solid #ccc;
+  margin: 30px -150px;
+
+  @media screen and (max-width: 768px) {
+    margin: 30px -50px;
+  }
+
+  @media screen and (max-width: 480px) {
+    margin: 30px 0;
+  }
+}
+
+.profplansec .detaisplan .topic {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.profplansec .detaisplan .prohead {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profplansec .detaisplan .prodesc {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}

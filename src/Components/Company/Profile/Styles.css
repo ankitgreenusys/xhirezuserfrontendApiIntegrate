@@ -1,0 +1,33 @@
+.Compprofile .basicpro .desc {
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.Compprofile .basicpro .desc img {
+  width: 70%;
+  height: 70%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  border: 2px solid #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.Compprofile .majpro .postedjobstab .jobpost h4 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+
+.Compprofile .majpro .postedjobstab .jobpost {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.Compprofile .minpro label span {
+  font-size: 14px;
+  font-weight: 400;
+}

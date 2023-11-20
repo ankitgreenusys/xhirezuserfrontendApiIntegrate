@@ -1,0 +1,39 @@
+.footer {
+  background-color: var(--color-text-light);
+  color: var(--color-text);
+}
+
+.footer .logmed p {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.footer .logmed .socmedia {
+  font-size: 20px;
+}
+
+.footer .logmed .socmedia .fa-twitter {
+  color: #00acee;
+}
+
+.footer .logmed .socmedia .fa-facebook {
+  color: #3b5998;
+}
+
+.footer .logmed .socmedia .fa-instagram {
+  color: #feda75;
+}
+
+.footer .logmed .socmedia .fa-linkedin {
+  color: #0a66c2;
+}
+
+.footer .linkhead {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.footer .footlinks li {
+  font-weight: 400;
+  font-size: 14px;
+}

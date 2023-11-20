@@ -1,0 +1,38 @@
+.userreg .emailreg .heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+
+.userreg .emailreg .mainbox {
+  padding: 40px 25px;
+  margin-bottom: 70px;
+}
+
+.userreg .emailreg .mainbox h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.userreg .emailreg .mainbox input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px !important;
+  border: 1px solid var(--color-text-light);
+  margin-bottom: 20px;
+}
+
+.userreg .emailreg .mainbox button {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 5px !important;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.userreg .fulreg .smalltxt {
+  font-size: 14px;
+  font-weight: 500;
+}

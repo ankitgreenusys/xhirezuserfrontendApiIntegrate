@@ -1,0 +1,40 @@
+.comphomesec {
+  margin-top: 50px;
+}
+
+.comphomesec .compcards {
+  width: 80%;
+}
+
+@media only screen and (max-width: 600px) {
+  .comphomesec .compcards {
+    width: 100%;
+  }
+}
+
+.comphomesec .compcards h1 {
+  font-weight: 600;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.comphomesec .compcards .cmpyimg img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.comphomesec .compcards .cpmynme {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.comphomesec .compcards .cpmydet {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.comphomesec .compcards input {
+  border-radius: 15px;
+  border: 1px solid var(--black, var(--color-border));
+}

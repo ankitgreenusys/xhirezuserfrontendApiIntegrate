@@ -1,0 +1,107 @@
+.jobsMy {
+  padding: 0 30vw;
+  margin-top: 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .jobsMy {
+    padding: 0 10vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .jobsMy {
+    padding: 0 5vw;
+  }
+}
+
+.jobsMy .jobstabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jobsMy .jobstabs .jobstab {
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: var(--color-muted);
+}
+
+.jobsMy .jobstabs .jobstab.true {
+  color: var(--color-text);
+}
+
+.jobsMy .lists .listbody .namesec .title span {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+.jobsMy .lists .listbody .namesec .title div {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.jobsMy .lists .listbody .smalldet {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobsMy .lists .listbody .jobdescr {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobsMy .lists .listbody .jobexp {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobsMy .lists .listbody .boxdesc .boxbtn {
+  background-color: var(--color-muted-light);
+  padding: 0.25rem 1rem;
+  border-radius: 0.55rem;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.jobsMy .intrvtab .catehead {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.jobsMy .intrvtab .listup {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.jobsMy .intrvtab .listitem {
+  margin-bottom: 10px;
+}
+
+.jobsMy .intrvtab .listitem .intvdat {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jobsMy .intrvtab .listitem .namesec {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.jobsMy .intrvtab .listitem .smalldet {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.jobsMy .intrvtab .listitem .intvdet {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.jobsMy .intrvtab .listitem .intvbtn {
+  font-size: 12px;
+  font-weight: 600;
+}

@@ -1,0 +1,28 @@
+.headermain {
+  background-color: var(--color-text-light);
+  color: var(--color-text);
+}
+
+.headermain .headerlogo {
+  width: 150px;
+}
+
+.headermain .account .acc-details .name {
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.headermain .account .acc-details .email {
+  font-size: 10px;
+}
+
+ .dropdownbtn {
+  background-color: var(--color-text-light);
+  color: var(--color-text);
+  border: none;
+  font-weight: 700;
+}
+
+.headermain .account .dropdown-toggle::after {
+  display: none;
+}
