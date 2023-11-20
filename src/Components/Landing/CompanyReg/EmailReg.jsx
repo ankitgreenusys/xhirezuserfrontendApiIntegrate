@@ -1,11 +1,37 @@
-import React from "react";
+import { useState } from "react";
+import api from "../../../utils/api";
 import "./Styles.css";
 
 const EmailReg = (props) => {
-  const [optsend, setOptsend] = React.useState(false);
-  const [email, setEmail] = React.useState("");
-  const [otp, setOtp] = React.useState("");
-  const [otpverify, setOtpverify] = React.useState(false);
+  const [optsend, setOptsend] = useState(false);
+  const [email, setEmail] = useState("");
+  const [otp, setOtp] = useState("");
+  const [otpverify, setOtpverify] = useState(false);
+
+  const [userId, setUserId] = useState(null);
+  const sendVerificationCode = async () => {
+    try {
+      const { data } = await api.post("/employer/signup", {
+        email,
+      });
+      console.log(data);
+      setUserId(data?.newUser?._id);
+      setOptsend(true);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  const verifyCode = async () => {
+    try {
+      const { data } = await api.post(`/employer/verifyotp/${userId}`, {
+        otp: +otp,
+      });
+      console.log(data);
+      setOtpverify(true);
+    } catch (err) {
+      console.log(err);
+    }
+  };
 
   return (
     <div>
@@ -25,7 +51,7 @@ const EmailReg = (props) => {
                 />
                 <button
                   className={`mybtn btn-${optsend ? "muted" : "blue"}`}
-                  onClick={() => setOptsend(true)}
+                  onClick={sendVerificationCode}
                   disabled={optsend}
                 >
                   Send Verification Code
@@ -33,7 +59,7 @@ const EmailReg = (props) => {
               </div>
               {optsend && (
                 <div className="mt-2">
-                  <p className="txt-muted">verification code sent to {email}</p>
+                  <p className="txt-muted">Verification code sent to {email}</p>
                   <h2>Enter Verification Code</h2>
                   <input
                     type="text"
@@ -44,7 +70,7 @@ const EmailReg = (props) => {
                   />
                   <button
                     className={`mybtn btn-${otpverify ? "muted" : "blue"}`}
-                    onClick={() => setOtpverify(true)}
+                    onClick={verifyCode}
                     disabled={otpverify}
                   >
                     Verify and Continue

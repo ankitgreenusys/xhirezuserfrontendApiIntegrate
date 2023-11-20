@@ -1,6 +1,15 @@
-import React from "react";
+import { useState } from "react";
 
 const DetailsReg = () => {
+  const [name, setName] = useState("");
+  const [industry, setIndustry] = useState("");
+  const [description, setDescription] = useState("");
+  const [size, setSize] = useState("");
+  const [file, setFile] = useState(null);
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPass, setConfirmPass] = useState("");
   return (
     <div className="detailssec">
       <div className="detailsreg d-flex flex-column align-items-center my-5">
@@ -8,55 +17,69 @@ const DetailsReg = () => {
         <div className="atextbox w-75">
           <div class="row">
             <div className="col-md-6 my-2">
-              <label htmlFor="Fname" className="m-2">
+              <label htmlFor="name" className="m-2">
                 Company name
               </label>
               <input
                 type="text"
-                name="Fname"
-                id="Fname"
+                name="name"
+                id="name"
                 className="form-control"
-                placeholder="Enter First Name"
+                placeholder="Enter Company Name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
               <label htmlFor="Lname" className="m-2">
                 Industry
               </label>
-              <select class="form-select" aria-label="Default select example">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                value={industry}
+                onChange={(e) => setIndustry(e.target.value)}
+              >
                 <option selected hidden>
                   Select Industry
                 </option>
-                <option value="1">IT</option>
-                <option value="2">Health</option>
-                <option value="3">Education</option>
+                <option value="it">IT</option>
+                <option value="health">Health</option>
+                <option value="edu">Education</option>
               </select>
             </div>
             <div className="my-2">
-              <label htmlFor="address" className="m-2">
+              <label htmlFor="description" className="m-2">
                 Company description
               </label>
               <textarea
-                name="address"
-                id="address"
+                name="description"
+                id="description"
                 rows="3"
                 className="form-control"
-                placeholder="Enter Address"
+                placeholder="Enter Description"
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
               <label htmlFor="Lname" className="m-2">
                 Company Size
               </label>
-              <select class="form-select" aria-label="Default select example">
+              <select
+                class="form-select"
+                aria-label="Default select example"
+                value={size}
+                onChange={(e) => setSize(e.target.value)}
+              >
                 <option selected hidden>
                   Select Company Size
                 </option>
-                <option value="1">1-10</option>
-                <option value="2">11-50</option>
-                <option value="3">51-200</option>
-                <option value="4">201-500</option>
-                <option value="5">500+</option>
+                <option value="1-10">1-10</option>
+                <option value="11-50">11-50</option>
+                <option value="51-200">51-200</option>
+                <option value="201-500">201-500</option>
+                <option value="500-1000">500+</option>
               </select>
             </div>
             <div className="my-2">
