@@ -1,14 +1,29 @@
-import React from "react";
-import "./App.css";
+import { useState, useEffect } from "react";
 import { Routes, Route } from "react-router-dom";
+import { jwtDecode } from "jwt-decode";
+import PassContext from "./utils/PassContext";
+import "./App.css";
 
 import LandingComp from "./imports/LandingComponents";
 import CandidateComp from "./imports/CandidateComponents";
 import CompanyComp from "./imports/CompanyComponents";
 
 function App() {
+  const [loggedUser, setLoggedUser] = useState(null);
+  const handleReturningUser = () => {
+    if (localStorage.getItem("token")) {
+      const decodedToken = jwtDecode(localStorage.getItem("token"));
+      setLoggedUser({
+        id: decodedToken.id,
+        role: decodedToken.role,
+      });
+    }
+  };
+  useEffect(() => {
+    handleReturningUser();
+  }, []);
   return (
-    <>
+    <PassContext.Provider value={{ loggedUser, setLoggedUser }}>
       <Routes>
         <Route path="/" element={<LandingComp.Header />}>
           <Route path="" element={<LandingComp.Home />} />
@@ -63,7 +78,7 @@ function App() {
         <Route path="/contact" element={<h1>Contact</h1>} />
       </Routes>
       <LandingComp.Footer />
-    </>
+    </PassContext.Provider>
   );
 }
 

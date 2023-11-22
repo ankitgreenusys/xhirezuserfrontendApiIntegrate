@@ -1,7 +1,24 @@
-import React from "react";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import api from "../../../utils/api";
 import "./Styles.css";
 
 const Index = () => {
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const login = async (e) => {
+    try {
+      const { data } = await api.post("/employee/login", { email, password });
+      console.log(data);
+      localStorage.setItem("tokenXHIRE", data.token);
+      navigate("/users/jobs");
+    } catch (e) {
+      console.log(e);
+    }
+  };
+
   return (
     <div className="login">
       <div className="d-flex flex-column marginframe my-5">
@@ -23,6 +40,8 @@ const Index = () => {
                     id="email"
                     className="form-control"
                     placeholder="Enter Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                   />
                 </div>
                 <div className="my-2">
@@ -35,9 +54,13 @@ const Index = () => {
                     id="passw"
                     className="form-control"
                     placeholder="Enter Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                   />
                 </div>
-                <button className="mybtn btn-blue my-4 w-100">Login</button>
+                <button className="mybtn btn-blue my-4 w-100" onClick={login}>
+                  Login
+                </button>
               </div>
             </div>
           </div>

@@ -1,6 +1,46 @@
-import React from "react";
+import { useState } from "react";
+import api from "../../../utils/api";
 
-const DetailsReg = (props) => {
+const DetailsReg = ({ userId, setDetails }) => {
+  const [fName, setFName] = useState("");
+  const [lName, setLName] = useState("");
+  const [file, setFile] = useState(null);
+  const [phone, setPhone] = useState("");
+  const [address, setAddress] = useState("");
+  const [city, setCity] = useState("");
+  const [state, setState] = useState("");
+  const [country, setCountry] = useState("India");
+  const [password, setPassword] = useState("");
+  const [cPassword, setCPassword] = useState("");
+
+  const registerUser = async () => {
+    const formData = new FormData();
+    formData.append("firstName", fName);
+    formData.append("lastName", lName);
+    formData.append("resume", file);
+    formData.append("number", phone);
+    formData.append("address", address);
+    formData.append("city", city);
+    formData.append("state", state);
+    formData.append("country", country);
+    formData.append("password", password);
+    try {
+      const { data } = await api.post(
+        `/employee/registration/${userId}`,
+        formData,
+        {
+          headers: {
+            "Content-Type": "multipart/form-data",
+          },
+        }
+      );
+      console.log(data);
+      setDetails(true);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="detailssec">
       <div className="detailsreg d-flex flex-column align-items-center my-5">
@@ -17,6 +57,8 @@ const DetailsReg = (props) => {
                 id="Fname"
                 className="form-control"
                 placeholder="Enter First Name"
+                value={fName}
+                onChange={(e) => setFName(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
@@ -29,24 +71,20 @@ const DetailsReg = (props) => {
                 id="Lname"
                 className="form-control"
                 placeholder="Enter Last Name"
+                value={lName}
+                onChange={(e) => setLName(e.target.value)}
               />
             </div>
             <div className="my-2">
               <label for="formFile" class="form-label m-2">
-                Default file input example
-              </label>
-              <input class="form-control" type="file" id="formFile" />
-            </div>
-            <div className="col-md-6 my-2">
-              <label htmlFor="email" className="m-2">
-                Email
+                Resume
               </label>
               <input
-                type="email"
-                name="email"
-                id="email"
-                className="form-control"
-                placeholder="Enter Email"
+                class="form-control"
+                type="file"
+                id="formFile"
+                value={file}
+                onChange={(e) => setFile(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
@@ -59,6 +97,8 @@ const DetailsReg = (props) => {
                 id="phone"
                 className="form-control"
                 placeholder="Enter Phone"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="my-2">
@@ -71,6 +111,8 @@ const DetailsReg = (props) => {
                 rows="3"
                 className="form-control"
                 placeholder="Enter Address"
+                value={address}
+                onChange={(e) => setAddress(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
@@ -83,6 +125,8 @@ const DetailsReg = (props) => {
                 id="city"
                 className="form-control"
                 placeholder="Enter City"
+                value={city}
+                onChange={(e) => setCity(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
@@ -95,21 +139,23 @@ const DetailsReg = (props) => {
                 id="state"
                 className="form-control"
                 placeholder="Enter State"
+                value={state}
+                onChange={(e) => setState(e.target.value)}
               />
             </div>
-            <div className=" my-2">
-              <div className="col-md-6">
-                <label htmlFor="zip" className="m-2">
-                  Zip
-                </label>
-                <input
-                  type="text"
-                  name="zip"
-                  id="zip"
-                  className="form-control"
-                  placeholder="Enter Zip"
-                />
-              </div>
+            <div className="col-md-6 my-2">
+              <label htmlFor="country" className="m-2">
+                Country
+              </label>
+              <input
+                type="text"
+                name="country"
+                id="country"
+                className="form-control"
+                placeholder="Enter Country"
+                value={country}
+                onChange={(e) => setCountry(e.target.value)}
+              />
             </div>
             <div className="col-md-6 my-2">
               <label htmlFor="passw" className="m-2">
@@ -121,6 +167,8 @@ const DetailsReg = (props) => {
                 id="passw"
                 className="form-control"
                 placeholder="Enter Password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div className="col-md-6 my-2">
@@ -133,12 +181,20 @@ const DetailsReg = (props) => {
                 id="cpassw"
                 className="form-control"
                 placeholder="Enter Confirm Password"
+                value={cPassword}
+                onChange={(e) => setCPassword(e.target.value)}
               />
             </div>
           </div>
           <div className="d-flex justify-content-end">
             <button
-              onClick={() => props.setDetails(true)}
+              onClick={() => {
+                if (password === cPassword) {
+                  registerUser();
+                } else {
+                  alert("Passwords do not match");
+                }
+              }}
               className="btn btn-primary my-4"
             >
               Submit

@@ -1,10 +1,24 @@
 import React from "react";
+import { useState, useEffect } from "react";
+import api from "../../../utils/api";
 import { NavLink, Link, Outlet } from "react-router-dom";
 import "./Styles.css";
-
 import Headerlogo from "../../../assets/images/headerlogo.png";
 
 const Index = () => {
+  const [loggedUser, setLoggedUser] = useState(null);
+  const getLoggedUser = async () => {
+    try {
+      const { data } = await api.get("/employee/profile");
+      console.log(data);
+      setLoggedUser(data?.profile?.userId);
+    } catch (e) {
+      console.log(e);
+    }
+  };
+  useEffect(() => {
+    getLoggedUser();
+  }, []);
   return (
     <>
       <nav className="navbar navbar-expand-lg header px-4 py-3">
@@ -47,8 +61,10 @@ const Index = () => {
               <div className="nav-item d-flex">
                 <i className="fa-solid fa-circle-user icon d-flex justify-content-around align-items-center"></i>
                 <div className="acc-details">
-                  <p className="txt-blue my-0 mx-1 name">Mohit Kumar</p>
-                  <p className="txt-muted my-0 mx-1 email">mohit@gmail.com</p>
+                  <p className="txt-blue my-0 mx-1 name">{`${loggedUser?.firstName} ${loggedUser?.lastName}`}</p>
+                  <p className="txt-muted my-0 mx-1 email">
+                    {loggedUser?.email}
+                  </p>
                 </div>
               </div>
             </Link>

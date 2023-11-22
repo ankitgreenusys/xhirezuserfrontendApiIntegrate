@@ -8,37 +8,37 @@ const api = axios.create({
   },
 });
 
-const updateToken = async () => {
-  const refreshToken = localStorage.getItem("refreshToken");
-  const { role } = jwtDecode(localStorage.getItem("token"));
-  try {
-    const { data } = await axios.post(
-      `${process.env.REACT_APP_BASE_API_URL}/${role}/refreshToken`,
-      {},
-      {
-        headers: {
-          refreshToken: refreshToken,
-        },
-      }
-    );
-    localStorage.setItem("token", data.token);
-  } catch (e) {
-    console.log(e);
-    localStorage.removeItem("token");
-  }
-};
+// const updateToken = async () => {
+//   const refreshToken = localStorage.getItem("refreshToken");
+//   const { role } = jwtDecode(localStorage.getItem("token"));
+//   try {
+//     const { data } = await axios.post(
+//       `${process.env.REACT_APP_BASE_API_URL}/${role}/refreshToken`,
+//       {},
+//       {
+//         headers: {
+//           refreshToken: refreshToken,
+//         },
+//       }
+//     );
+//     localStorage.setItem("token", data.token);
+//   } catch (e) {
+//     console.log(e);
+//     localStorage.removeItem("token");
+//   }
+// };
 
 // Add a request interceptor
 api.interceptors.request.use(
   async function (config) {
     // Do something before request is sent
-    if (!localStorage.getItem("token")) return config;
-    const { exp } = jwtDecode(localStorage.getItem("token"));
-    if (Date.now() >= exp * 1000) {
-      await updateToken();
-    }
+    if (!localStorage.getItem("tokenXHIRE")) return config;
+    // const { exp } = jwtDecode(localStorage.getItem("tokenXHIRE"));
+    // if (Date.now() >= exp * 1000) {
+      // await updateToken();
+    // }
     Object.assign(config.headers, {
-      Authorization: "Bearer " + localStorage.getItem("token"),
+      Authorization: "Bearer " + localStorage.getItem("tokenXHIRE"),
     });
     return config;
   },
