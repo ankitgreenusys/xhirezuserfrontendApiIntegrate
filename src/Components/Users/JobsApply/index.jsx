@@ -1,4 +1,6 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+import api from "../../../utils/api";
 import "./Styles.css";
 
 import JobDesc from "./JobDesc";
@@ -7,6 +9,20 @@ import ReviewData from "./ReviewData";
 import Applied from "./Applied";
 
 const Index = () => {
+  const { jobId } = useParams();
+
+  const [job, setJob] = useState({});
+  const getJob = async () => {
+    try {
+      const { data } = await api.get(`/employee/jobbyid/${jobId}`);
+      setJob(data.job);
+    } catch (err) {
+      console.log(err);
+    }
+  };
+  useEffect(() => {
+    getJob();
+  }, []);
   return (
     <div class="jobsapplysec marginframe">
       {/* <Applied /> */}
@@ -17,7 +33,7 @@ const Index = () => {
         </div>
         <div className="col-lg-1"></div>
         <div className="col-lg-5 px-2">
-          <JobDesc />
+          <JobDesc job={job} />
         </div>
       </div>
     </div>
