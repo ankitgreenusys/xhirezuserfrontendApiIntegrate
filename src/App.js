@@ -11,8 +11,8 @@ import CompanyComp from "./imports/CompanyComponents";
 function App() {
   const [loggedUser, setLoggedUser] = useState(null);
   const handleReturningUser = () => {
-    if (localStorage.getItem("token")) {
-      const decodedToken = jwtDecode(localStorage.getItem("token"));
+    if (localStorage.getItem("tokenXHIRE")) {
+      const decodedToken = jwtDecode(localStorage.getItem("tokenXHIRE"));
       setLoggedUser({
         id: decodedToken.id,
         role: decodedToken.role,
