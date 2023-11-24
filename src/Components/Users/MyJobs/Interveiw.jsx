@@ -1,6 +1,19 @@
-import React from "react";
+import { useState, useEffect } from "react";
+import api from "../../../utils/api";
 
 const Interveiw = () => {
+  const [interviewList, setInterviewList] = useState([]);
+  const getInterviewList = async () => {
+    try {
+      const { data } = await api.get(`/employee/interviews`);
+      console.log(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+  useEffect(() => {
+    getInterviewList();
+  }, []);
   return (
     <div class="intrvtab mt-3">
       <div className="catehead">Upcoming interviews</div>

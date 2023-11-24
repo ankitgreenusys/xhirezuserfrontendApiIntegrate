@@ -30,6 +30,9 @@ const UserData = () => {
       <div className="qnasec">
         <h6 className="heading">Answer the following questions</h6>
         <div className="ques">
+          {
+            
+          }
           <p>
             Will you be able to reliably commute or relocate to Gautam Budh
             Nagar, Uttar Pradesh for this job?
