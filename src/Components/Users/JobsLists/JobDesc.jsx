@@ -31,7 +31,10 @@ const JobDesc = ({ activeJob }) => {
             </span>
           </div>
           <div className="mt-3">
-            <Link to="/users/jobs/1/apply" className="mybtn btn-blue">
+            <Link
+              to={`/users/jobs/${activeJob._id}/apply`}
+              className="mybtn btn-blue"
+            >
               Apply
             </Link>
             <span className="ms-4">
