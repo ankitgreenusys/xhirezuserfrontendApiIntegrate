@@ -12,7 +12,7 @@
   --color-border: #333333;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #1c1e21;
     --color-text: #ffffff;
@@ -20,7 +20,7 @@
     --color-dark: #f9fbfc;
     --color-border: #928e8e;
   }
-}
+} */
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200;1,300;1,400&display=swap");
 
