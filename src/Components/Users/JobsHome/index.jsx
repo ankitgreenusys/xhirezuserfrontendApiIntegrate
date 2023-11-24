@@ -1,10 +1,13 @@
-import React from "react";
+import { useState } from "react";
 import "./Styles.css";
 
 import { Link } from "react-router-dom";
 import Companylogo from "../../../assets/images/companylogo.jpg";
 
 const Index = () => {
+  const [jTitle, setJTitle] = useState("");
+  const [jLocation, setJLocation] = useState("");
+  const [jExperience, setJExperience] = useState("");
   return (
     <div className="jobshomesec marginframe">
       <div className="d-flex justify-content-center flex-column align-items-center">
@@ -20,20 +23,29 @@ const Index = () => {
               type="text"
               className="form-control mx-2"
               placeholder="Search job ..."
+              value={jTitle}
+              onChange={(e) => setJTitle(e.target.value)}
             />
             <input
               type="text"
               className="form-control mx-2"
               placeholder="location....."
+              value={jLocation}
+              onChange={(e) => setJLocation(e.target.value)}
             />
             <input
               type="text"
               className="form-control mx-2"
               placeholder="Experience"
+              value={jExperience}
+              onChange={(e) => setJExperience(e.target.value)}
             />
           </div>
           <div className="d-flex justify-content-center mt-3">
-            <Link to="list" className="mybtn btn-blue px-4">
+            <Link
+              to={`list?jobTitle=${jTitle}&jobLocation=${jLocation}&jobExperience=${jExperience}`}
+              className="mybtn btn-blue px-4"
+            >
               <i class="fa-solid fa-magnifying-glass"></i> Search
             </Link>
           </div>
