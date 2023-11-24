@@ -83,8 +83,7 @@ const DetailsReg = ({ userId, setDetails }) => {
                 class="form-control"
                 type="file"
                 id="formFile"
-                value={file}
-                onChange={(e) => setFile(e.target.value)}
+                onChange={(e) => setFile(e.target.files[0])}
               />
             </div>
             <div className="col-md-6 my-2">
