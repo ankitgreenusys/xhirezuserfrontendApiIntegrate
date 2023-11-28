@@ -5,6 +5,7 @@ import CompanyProfile from "../Components/Company/Profile";
 import CompanyMessages from "../Components/Company/Messages";
 import CompanyCreateJob from "../Components/Company/JobPost";
 import CompanySelectTemplate from "../Components/Company/SelectTemplate";
+import CompanyJobDetails from "../Components/Company/JobDetails";
 
 export default {
   CompanyHeader,
@@ -14,4 +15,5 @@ export default {
   CompanyMessages,
   CompanyCreateJob,
   CompanySelectTemplate,
+  CompanyJobDetails,
 };

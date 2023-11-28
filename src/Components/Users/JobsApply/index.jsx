@@ -29,6 +29,7 @@ const Index = () => {
       <div className="row">
         <div className="col-lg-6 px-2">
           <UserData />
+          {/* Dono me se ek rkhna hai  */}
           {/* <ReviewData /> */}
         </div>
         <div className="col-lg-1"></div>

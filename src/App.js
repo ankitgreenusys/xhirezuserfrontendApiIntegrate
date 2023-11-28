@@ -63,6 +63,7 @@ function App() {
               path="selecttemp"
               element={<CompanyComp.CompanySelectTemplate />}
             />
+            <Route path="details" element={<CompanyComp.CompanyJobDetails />} />
           </Route>
           <Route path="candidates">
             <Route path="" element={<CompanyComp.CompanyCandidates />} />
